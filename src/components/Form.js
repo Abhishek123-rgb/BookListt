@@ -15,8 +15,8 @@ const Form = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={e => setTitle(e.target.value)}/>
-                <input type="text" value={author} onChange={e => setAuthor(e.target.value)}/>
+                <input type="text" value={title} onChange={e => setTitle(e.target.value)} required/>
+                <input type="text" value={author} onChange={e => setAuthor(e.target.value)} required/>
                 <input type="submit" value="add book"  />
             </form>
         </div>
